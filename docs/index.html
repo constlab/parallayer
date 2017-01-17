@@ -1,0 +1,172 @@
+<!doctype html>
+
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Параллейер</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="assets/css/main.min.css">
+	</head>
+
+	<body>
+		<h1>Параллейер</h1>
+
+		<p>Лёгкий параллакс всего за&nbsp;1.33&thinsp;Кбайт!</p>
+
+		<h3>Замедление</h3>
+
+		<div class="parallayer">
+			<div class="parallayer-item"
+				data-pl-action="deceleration"
+				data-pl-offset="200"
+				style="
+					background-image: url(assets/img/img-1.jpg);
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-size: cover;
+			"></div>
+		</div>
+
+		<h3>Ускорение</h3>
+
+		<div class="parallayer">
+			<div class="parallayer-item"
+				data-pl-action="acceleration"
+				data-pl-offset="200"
+				style="
+					background-image: url(assets/img/img-1.jpg);
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-size: cover;
+			"></div>
+		</div>
+
+		<h3>Вправо</h3>
+
+		<div class="parallayer">
+			<div class="parallayer-item"
+				data-pl-action="to-right"
+				data-pl-offset="200"
+				style="
+					background-image: url(assets/img/img-1.jpg);
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-size: cover;
+			"></div>
+		</div>
+
+		<h3>Влево</h3>
+
+		<div class="parallayer">
+			<div class="parallayer-item"
+				data-pl-action="to-left"
+				data-pl-offset="200"
+				style="
+					background-image: url(assets/img/img-1.jpg);
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-size: cover;
+			"></div>
+		</div>
+
+		<h3>Увеличение</h3>
+
+		<div class="parallayer">
+			<div class="parallayer-item"
+				data-pl-action="increase"
+				data-pl-scale="1.5"
+				style="
+					background-image: url(assets/img/img-1.jpg);
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-size: cover;
+			"></div>
+		</div>
+
+		<h3>Уменьшение</h3>
+
+		<div class="parallayer">
+			<div class="parallayer-item"
+				data-pl-action="decrease"
+				data-pl-scale="1.5"
+				style="
+					background-image: url(assets/img/img-1.jpg);
+					background-position: 50%;
+					background-repeat: no-repeat;
+					background-size: cover;
+			"></div>
+		</div>
+
+		<h3>Шейк!</h3>
+
+		<div class="parallayer">
+			<div class="parallayer-item"
+				data-pl-action="deceleration"
+				data-pl-offset="400"
+				style="
+					background-image: url(http://cs624517.vk.me/v624517474/3b58b/gAlGeE8BWBg.jpg);
+					background-position: 0 50%;
+					background-repeat: no-repeat;
+			"></div>
+
+			<div class="parallayer-item"
+				data-pl-action="acceleration"
+				data-pl-offset="400"
+				style="
+					background-image: url(http://cs624517.vk.me/v624517474/3b58b/gAlGeE8BWBg.jpg);
+					background-position: 100% 50%;
+					background-repeat: no-repeat;
+			"></div>
+
+			<div class="parallayer-item"
+				data-pl-action="to-right"
+				data-pl-offset="400"
+				style="
+					background-image: url(http://cs624517.vk.me/v624517474/3b58b/gAlGeE8BWBg.jpg);
+					background-position: 50% 0;
+					background-repeat: no-repeat;
+			"></div>
+
+			<div class="parallayer-item"
+				data-pl-action="to-left"
+				data-pl-offset="400"
+				style="
+					background-image: url(http://cs624517.vk.me/v624517474/3b58b/gAlGeE8BWBg.jpg);
+					background-position: 50% 100%;
+					background-repeat: no-repeat;
+			"></div>
+
+			<div class="parallayer-item"
+				data-pl-action="increase"
+				data-pl-scale="3"
+				style="
+					background-image: url(http://cs624517.vk.me/v624517474/3b58b/gAlGeE8BWBg.jpg);
+					background-position: 40% 50%;
+					background-repeat: no-repeat;
+			"></div>
+
+			<div class="parallayer-item"
+				data-pl-action="decrease"
+				data-pl-scale="3"
+				style="
+					background-image: url(http://cs624517.vk.me/v624517474/3b58b/gAlGeE8BWBg.jpg);
+					background-position: 60% 50%;
+					background-repeat: no-repeat;
+			"></div>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/parallayer.min.js"></script>
+
+		<script>
+			(function($) {
+
+				'use strict';
+
+				// инициализация
+				$.parallayer();
+
+			})(jQuery);
+		</script>
+	</body>
+</html>
