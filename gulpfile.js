@@ -13,7 +13,8 @@ var gulp         = require('gulp'),
 	del          = require('del'),
 	csscomb      = require('gulp-csscomb'),
 	notify       = require('gulp-notify'),
-	multipipe    = require('multipipe');
+	multipipe    = require('multipipe'),
+	header       = require('gulp-header');
 
 // ==== Paths ==== //
 
@@ -53,6 +54,17 @@ const paths = {
 		js:   'src/assets/js/**/*.js'
 	}
 };
+
+// ==== Header ==== //
+
+var pkg = require('./package.json'),
+	banner = ['/*!',
+		' * <%= pkg.title %> v<%= pkg.version %> by <%= pkg.author %>',
+		' * <%= pkg.description %>',
+		' * Demo: <%= pkg.homepage %>',
+		' * License: <%= pkg.license %>',
+		' */',
+		''].join('\n');
 
 // ==== Browser Sync Config ==== //
 
@@ -127,6 +139,7 @@ gulp.task('js:parallayer', function() {
 		concat('parallayer.min.js'),
 		wrap("(function($){'use strict';<%= contents %>})(jQuery);"),
 		uglify(),
+		header(banner, {pkg: pkg}),
 		gulp.dest(paths.docs.js),
 		browserSync.stream()
 	).on('error', notify.onError(function(err) {

@@ -1,8 +1,27 @@
 {
   "name": "parallayer",
   "version": "1.0.0",
+  "title": "Parallayer",
+  "description": "jQuery-plugin for parallax effects",
+  "homepage": "https://constlab.github.io/parallayer/",
+  "author": "Maxim Sofronov <imaxsof@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/constlab/parallayer.git"
+  },
+  "keywords": [
+    "parallax",
+    "gyroscope",
+    "jquery",
+    "javascript",
+    "library"
+  ],
+  "bugs": {
+    "url": "https://github.com/constlab/parallayer/issues"
+  },
   "dependencies": {
-    "normalize.css": "5.0.0",
+    "normalize.css": "^5.0.0",
     "jquery": "^2.2.4"
   },
   "devDependencies": {
@@ -13,6 +32,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-csscomb": "^3.0.8",
     "gulp-csso": "^2.0.0",
+    "gulp-header": "^1.8.8",
     "gulp-less": "^3.3.0",
     "gulp-notify": "^2.2.0",
     "gulp-uglify": "^2.0.0",
